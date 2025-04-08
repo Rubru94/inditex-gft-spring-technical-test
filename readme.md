@@ -68,9 +68,19 @@ REST API developed with **Spring Boot** to query prices based on product, brand 
     }
     ```
 
+## Docker 🐋
+
+Execute [`docker-compose`](./docker-compose.yaml) file:
+
+```bash
+docker compose up -d
+```
+
 ## Swagger UI 👀
 
 Swagger UI allows anyone to visualize and interact with the API’s resources without having any of the implementation logic in place:
+
+When app is running, navigate to:
 
 📌 - http://localhost:8080/swagger-ui/index.html
 

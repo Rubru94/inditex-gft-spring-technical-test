@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    image: docker-inditex-technical-test-app:latest
+    build:
+      context: .
+    container_name: inditex-technical-test-app
+    ports:
+      - 8080:8080
