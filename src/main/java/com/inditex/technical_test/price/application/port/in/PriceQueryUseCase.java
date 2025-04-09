@@ -6,5 +6,5 @@ import java.util.Optional;
 import com.inditex.technical_test.price.domain.Price;
 
 public interface PriceQueryUseCase {
-    Optional<Price> getPrice(int brandId, int productId, LocalDateTime applicationDate);
+    Optional<Price> getPrice(Integer brandId, Integer productId, LocalDateTime applicationDate);
 }

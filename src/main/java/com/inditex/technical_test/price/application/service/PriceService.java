@@ -20,7 +20,7 @@ public class PriceService implements PriceQueryUseCase {
     }
 
     @Override
-    public Optional<Price> getPrice(int brandId, int productId, LocalDateTime applicationDate) {
+    public Optional<Price> getPrice(Integer brandId, Integer productId, LocalDateTime applicationDate) {
         Optional<Price> price = priceRepositoryPort.findPrice(brandId, productId, applicationDate);
 
         if (!price.isPresent())

@@ -19,7 +19,7 @@ public class PriceRepositoryAdapter implements PriceRepositoryPort {
     }
 
     @Override
-    public Optional<Price> findPrice(int brandId, int productId, LocalDateTime applicationDate) {
+    public Optional<Price> findPrice(Integer brandId, Integer productId, LocalDateTime applicationDate) {
         return priceRepository.findPrice(brandId, productId, applicationDate);
     }
 }

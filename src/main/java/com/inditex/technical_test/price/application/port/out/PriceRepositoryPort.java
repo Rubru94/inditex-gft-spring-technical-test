@@ -6,5 +6,5 @@ import java.util.Optional;
 import com.inditex.technical_test.price.domain.Price;
 
 public interface PriceRepositoryPort {
-    Optional<Price> findPrice(int brandId, int productId, LocalDateTime applicationDate);
+    Optional<Price> findPrice(Integer brandId, Integer productId, LocalDateTime applicationDate);
 }
