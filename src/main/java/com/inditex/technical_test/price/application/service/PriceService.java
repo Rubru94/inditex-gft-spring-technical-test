@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
+
+import com.inditex.technical_test.core.error.exceptions.NotFoundException;
 import com.inditex.technical_test.price.application.port.in.PriceQueryUseCase;
 import com.inditex.technical_test.price.application.port.out.PriceRepositoryPort;
 import com.inditex.technical_test.price.domain.Price;
@@ -19,6 +21,13 @@ public class PriceService implements PriceQueryUseCase {
 
     @Override
     public Optional<Price> getPrice(int brandId, int productId, LocalDateTime applicationDate) {
-        return priceRepositoryPort.findPrice(brandId, productId, applicationDate);
+        Optional<Price> price = priceRepositoryPort.findPrice(brandId, productId, applicationDate);
+
+        if (!price.isPresent())
+            throw new NotFoundException(
+                    ("No price found for product: " + productId + " & brand: " + brandId + " at date: "
+                            + applicationDate));
+
+        return price;
     }
 }
