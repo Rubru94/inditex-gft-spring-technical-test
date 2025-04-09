@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "cfdbfbd3-74d8-4e67-8d59-a98fc445d68d",
+		"name": "Inditex Technical test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9561143"
+	},
+	"item": [
+		{
+			"name": "Prices",
+			"item": [
+				{
+					"name": "Get price",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/prices?brandId=1&productId=35455&applicationDate=2020-06-14 10:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "1"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "applicationDate",
+									"value": "2020-06-14 10:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/prices?brandId=1&productId=35455&applicationDate=2020-06-14 10:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "1"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "applicationDate",
+									"value": "2020-06-14 10:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/prices?brandId=1&productId=35455&applicationDate=2020-06-14 16:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "1"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "applicationDate",
+									"value": "2020-06-14 16:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/prices?brandId=1&productId=35455&applicationDate=2020-06-14 21:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "1"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "applicationDate",
+									"value": "2020-06-14 21:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/prices?brandId=1&productId=35455&applicationDate=2020-06-15 10:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "1"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "applicationDate",
+									"value": "2020-06-15 10:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/prices?brandId=1&productId=35455&applicationDate=2020-06-16 21:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "1"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "applicationDate",
+									"value": "2020-06-16 21:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

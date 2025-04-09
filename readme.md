@@ -132,3 +132,7 @@ Accessible on:
 <hr/>
 
 ![sonar-overview](./sonar-overview.png)
+
+## Postman 📫
+
+A [postman collection](./inditex-technical-test.postman_collection.json) is made available to interact with the application by consuming its endpoints in the simplest way.
