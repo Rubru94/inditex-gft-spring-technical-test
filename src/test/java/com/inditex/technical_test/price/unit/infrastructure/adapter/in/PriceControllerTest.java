@@ -1,4 +1,4 @@
-package com.inditex.technical_test.price.infrastructure.adapter.in;
+package com.inditex.technical_test.price.unit.infrastructure.adapter.in;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -24,6 +24,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.inditex.technical_test.core.constants.DateTimeConstants;
 import com.inditex.technical_test.price.application.port.in.PriceQueryUseCase;
 import com.inditex.technical_test.price.domain.Price;
+import com.inditex.technical_test.price.infrastructure.adapter.in.PriceController;
 
 @WebMvcTest(PriceController.class)
 class PriceControllerTest {

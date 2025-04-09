@@ -1,4 +1,4 @@
-package com.inditex.technical_test.price.application.service;
+package com.inditex.technical_test.price.unit.application.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -20,6 +20,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.inditex.technical_test.core.error.exceptions.NotFoundException;
 import com.inditex.technical_test.price.application.port.out.PriceRepositoryPort;
+import com.inditex.technical_test.price.application.service.PriceService;
 import com.inditex.technical_test.price.domain.Price;
 
 @ExtendWith(MockitoExtension.class)
