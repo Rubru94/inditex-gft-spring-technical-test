@@ -91,3 +91,44 @@ To run the tests use the following command:
 ```bash
 mvn test
 ```
+
+## Sonar 🚦
+
+Including sonar as a container in [`docker-compose`](./docker-compose.yaml) file.
+
+If it is the first time you deploy the container, **user** & **pass** are `admin` and sonar will ask you to change the pass.
+
+Accessible on:
+
+📌 - http://localhost:9000/
+
+- To generate the coverage report, **JaCoCo** plugin has been added to the [`pom.xml`](./pom.xml).
+
+  Execute:
+
+  ```bash
+  mvn clean verify
+  ```
+
+  ```bash
+  mvn jacoco:report
+  ```
+
+  This last command will generate the `target/site` directory with the report.
+
+- It will be necessary to create a project in sonar and an associated token. Then execute sonar command similar to this:
+
+  ```bash
+  sonar-scanner \
+  -Dsonar.projectKey=inditex-technical-test \
+  -Dsonar.sources=src/main/java \
+  -Dsonar.java.binaries=target/classes \
+  -Dsonar.java.libraries=target/\*.jar \
+  -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token=<generated-token>
+  ```
+
+<hr/>
+
+![sonar-overview](./sonar-overview.png)
