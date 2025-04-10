@@ -6,6 +6,10 @@
 
 REST API developed with **Spring Boot** to query prices based on product, brand & date.
 
+[Ports & adapters architecture (hexagonal)](https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f) + [vertical slicing](https://www.youtube.com/watch?v=eNFAJbWCSww) is used.
+
+![hexagonal-architecture](./hexagonal-architecture.png)
+
 ## Stack ⛺
 
 - Java 21
@@ -31,9 +35,22 @@ REST API developed with **Spring Boot** to query prices based on product, brand 
    ```
 
 3. Run application:
+
    ```bash
    mvn spring-boot:run
    ```
+
+   Accessible on:
+
+   📌 - http://localhost:8080/
+
+## Docker 🐋
+
+Execute [`docker-compose`](./docker-compose.yaml) file:
+
+```bash
+docker compose up -d
+```
 
 ## API 📌
 
@@ -67,14 +84,6 @@ REST API developed with **Spring Boot** to query prices based on product, brand 
       "currency": "EUR"
     }
     ```
-
-## Docker 🐋
-
-Execute [`docker-compose`](./docker-compose.yaml) file:
-
-```bash
-docker compose up -d
-```
 
 ## Swagger UI 👀
 
